@@ -2,6 +2,7 @@ package utils
 
 import (
 	"cv_app/configs"
+	"cv_app/entities"
 	"fmt"
 
 	"github.com/labstack/gommon/log"
