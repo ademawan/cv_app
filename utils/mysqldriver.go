@@ -32,19 +32,19 @@ func InitDB(config *configs.AppConfig) *gorm.DB {
 }
 
 func InitMigrate(db *gorm.DB) {
-	// db.Migrator().DropTable(&entities.Ability{})
-	// db.Migrator().DropTable(&entities.Achievement{})
-	// db.Migrator().DropTable(&entities.Education{})
-	// db.Migrator().DropTable(&entities.Language{})
-	// db.Migrator().DropTable(&entities.WorkExperience{})
-	// db.Migrator().DropTable(&entities.User{})
+	db.Migrator().DropTable(&entities.Ability{})
+	db.Migrator().DropTable(&entities.Achievement{})
+	db.Migrator().DropTable(&entities.Education{})
+	db.Migrator().DropTable(&entities.Language{})
+	db.Migrator().DropTable(&entities.WorkExperience{})
+	db.Migrator().DropTable(&entities.User{})
 
-	// db.AutoMigrate(&entities.User{})
-	// db.AutoMigrate(&entities.Ability{})
-	// db.AutoMigrate(&entities.Achievement{})
-	// db.AutoMigrate(&entities.Education{})
-	// db.AutoMigrate(&entities.Language{})
-	// db.AutoMigrate(&entities.WorkExperience{})
+	db.AutoMigrate(&entities.User{})
+	db.AutoMigrate(&entities.Ability{})
+	db.AutoMigrate(&entities.Achievement{})
+	db.AutoMigrate(&entities.Education{})
+	db.AutoMigrate(&entities.Language{})
+	db.AutoMigrate(&entities.WorkExperience{})
 
 	// var userUid []string
 
