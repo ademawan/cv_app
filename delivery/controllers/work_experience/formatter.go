@@ -9,8 +9,8 @@ type WorkExperienceRequestFormat struct {
 	UserUid     string
 	CompanyName string    `json:"company_name" form:"company_name" validate:"required,min=2,max=25"`
 	Position    string    `json:"position" form:"position" validate:"required,min=2,max=25"`
-	StartDate   time.Time `json:"start_date" form:"start_date" validate:"required"`
-	EndDate     time.Time `json:"end_date" form:"end_date" validate:"required"`
+	StartDate   time.Time `json:"start_date" form:"start_date"`
+	EndDate     time.Time `json:"end_date" form:"end_date"`
 }
 
 type UpdateWorkExperienceRequestFormat struct {
